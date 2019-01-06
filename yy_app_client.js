@@ -15,7 +15,7 @@ yy_app_client.set('view engine', 'html');
 yy_app_client.use('/', express.static(__dirname + "/views/"));
 yy_app_client.use('/api', proxys);
 
-var server = http.createServer(yy_app_client).listen(7002, function () {
+var server = http.createServer(yy_app_client).listen(7004, function () {
     var host = server.address().address;
     var port = server.address().port;
     console.log('ranning at host', host);
